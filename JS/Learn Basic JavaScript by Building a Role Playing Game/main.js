@@ -24,7 +24,7 @@ function goStore() {
 }
 
 function goCave() {
-  console.log("Going to cave.");
+    button1.innerText = "Buy 10 health (10 gold)"
 }
 
 function fightDragon() {

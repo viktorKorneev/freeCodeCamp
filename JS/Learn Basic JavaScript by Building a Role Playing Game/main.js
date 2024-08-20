@@ -1,11 +1,10 @@
-
 let xp = 0;
 let health = 100;
 let gold = 50;
 let currentWeaponIndex = 0;
-let fighting
-let monsterHealth
-let inventory = ["stick"]
+let fighting;
+let monsterHealth;
+let inventory = ["stick"];
 
 const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
@@ -18,14 +17,16 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 
-const monsterHealthText = document.querySelector("#monsterHealth")
+const monsterHealthText = document.querySelector("#monsterHealth");
 
 function goStore() {
-console.log("Going to store.");
-
+  console.log("Going to store.");
 }
 
 function goCave() {
-    console.log("Going to cave.");
-    
-    }
+  console.log("Going to cave.");
+}
+
+function fightDragon() {
+  console.log("Fighting dragon.");
+}

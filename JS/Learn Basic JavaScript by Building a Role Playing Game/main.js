@@ -73,7 +73,7 @@ function goStore() {
 }
 
 function goCave() {
-  console.log("Fighting dragon.");
+  update(locations[2])
 }
 
 function fightDragon() {

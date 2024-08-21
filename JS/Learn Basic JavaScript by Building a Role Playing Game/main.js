@@ -19,14 +19,11 @@ const monsterName = document.querySelector("#monsterName");
 
 const monsterHealthText = document.querySelector("#monsterHealth");
 
-const locations = [];
-
-const cat = {
-name: "Whiskers",
-"Number of legs": 4
-}
-console.log(cat["Number of legs"]);
-
+const locations = [
+  {
+    name: "town square"
+  }
+];
 
 // initialize buttons
 
@@ -64,8 +61,6 @@ function goCave() {
 function fightDragon() {
   console.log("Fighting dragon.");
 }
-
-
 
 function buyHealth() {}
 function buyWeapon() {}

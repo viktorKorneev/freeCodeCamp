@@ -58,7 +58,9 @@ function goTown() {
   update(locations[0]);
 }
 
-function goStore() {}
+function goStore() {
+  update(locations[1])
+}
 
 function goCave() {
   console.log("Fighting dragon.");

@@ -56,7 +56,7 @@ function update(location) {
 }
 
 function goTown() {
-  update(locations);
+  update(locations[0]);
 }
 
 function goStore() {}

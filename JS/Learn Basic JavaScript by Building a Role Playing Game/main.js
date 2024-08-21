@@ -125,5 +125,9 @@ function buyWeapon() {
   }
 }
 
+function sellWeapon() {
+
+}
+
 function fightSlime() {}
 function fightBeast() {}

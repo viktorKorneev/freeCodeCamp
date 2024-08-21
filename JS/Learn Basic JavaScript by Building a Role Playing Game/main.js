@@ -157,6 +157,7 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-function goFight (){
-  
+function goFight() {
+  fighting = 0;
+  goFight();
 }

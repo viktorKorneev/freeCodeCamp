@@ -19,6 +19,20 @@ const monsterName = document.querySelector("#monsterName");
 
 const monsterHealthText = document.querySelector("#monsterHealth");
 
+const locations = [];
+
+const cat = {
+
+}
+console.log(cat);
+
+
+// initialize buttons
+
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+
 function update(location) {}
 
 function goTown() {
@@ -50,13 +64,7 @@ function fightDragon() {
   console.log("Fighting dragon.");
 }
 
-const locations = [];
 
-// initialize buttons
-
-button1.onclick = goStore;
-button2.onclick = goCave;
-button3.onclick = fightDragon;
 
 function buyHealth() {}
 function buyWeapon() {}

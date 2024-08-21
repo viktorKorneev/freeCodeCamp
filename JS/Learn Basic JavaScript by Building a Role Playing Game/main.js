@@ -22,7 +22,7 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 const locations = [];
 
 const cat = {
-
+name: "Whiskers"
 }
 console.log(cat);
 

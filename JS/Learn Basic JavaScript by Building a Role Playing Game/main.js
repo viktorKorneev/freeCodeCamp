@@ -184,6 +184,6 @@ function attack() {
   text.innerText +=
     " You attack it with your " + weapons[currentWeaponIndex].name + ".";
   health -= monsters[fighting].level;
-  monsterHealth -= weapons[currentWeaponIndex].power;
+  monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1
 }
 function dodge() {}

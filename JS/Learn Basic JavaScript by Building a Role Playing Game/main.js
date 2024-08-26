@@ -100,7 +100,7 @@ const locations = [
     "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
     "button functions": [restart, restart, restart],
     text: "You die. &#x2620;",
-  }
+  },
 ];
 
 // initialize buttons
@@ -210,9 +210,9 @@ function attack() {
   } else if (monsterHealth <= 0) {
     defeatMonster();
     if (fighting === 2) {
-      winGame()
+      winGame();
     } else {
-      defeatMonster()
+      defeatMonster();
     }
   }
 }
@@ -231,6 +231,10 @@ function lose() {
   update(locations[5]);
 }
 
+function winGame() {
+  update(locations[6]);
+}
+
 function restart() {
   xp = 0;
   health = 100;
@@ -240,5 +244,5 @@ function restart() {
   goldText.innerText = gold;
   healthText.innerText = health;
   xpText.innerText = xp;
-  goTown()
+  goTown();
 }

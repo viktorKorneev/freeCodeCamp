@@ -225,8 +225,9 @@ function attack() {
       defeatMonster();
     }
   }
-  if (Math.random() <= .1){
-    text.innerText += " Your " + inventory.pop() + " breaks."
+  if (Math.random() <= 0.1) {
+    text.innerText += " Your " + inventory.pop() + " breaks.";
+    currentWeaponIndex--;
   }
 }
 

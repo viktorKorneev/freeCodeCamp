@@ -225,7 +225,9 @@ function attack() {
       defeatMonster();
     }
   }
-  if (Math.random() <= .1){}
+  if (Math.random() <= .1){
+    text.innerText += " Your " + inventory.pop() + " breaks."
+  }
 }
 
 function getMonsterAttackValue(level) {

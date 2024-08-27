@@ -18,3 +18,6 @@ function getRandomIndex() {
 }
 getRandomIndex();
 const body = document.querySelector("body");
+const bgHexCodeSpanElement = document.getElementById("bg-hex-code");
+
+console.log(bgHexCodeSpanElement);

@@ -17,3 +17,4 @@ function getRandomIndex() {
   return randomIndex;
 }
 getRandomIndex();
+const body = document.querySelector("body");

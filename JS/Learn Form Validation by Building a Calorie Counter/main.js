@@ -16,4 +16,6 @@ function isInvalidInput(str) {
   return str.match(regex)
 }
 
-function addEntry(){}
+function addEntry(){
+    let targetId = '#' + entryDropdown.value;
+}

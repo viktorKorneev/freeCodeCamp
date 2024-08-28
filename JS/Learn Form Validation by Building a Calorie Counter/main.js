@@ -11,6 +11,6 @@ function cleanInputString(str) {
   return str.replace(regex, "");
 }
 
-function isInvalidInput(str){
-    let regex = /e/
+function isInvalidInput(str) {
+  let regex = /e/i;
 }

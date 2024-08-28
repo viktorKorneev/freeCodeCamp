@@ -18,4 +18,5 @@ function isInvalidInput(str) {
 
 function addEntry(){
     let targetId = '#' + entryDropdown.value;
+    let targetInputContainer = document.querySelector(targetId + " .input-container")
 }

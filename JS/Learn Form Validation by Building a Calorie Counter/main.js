@@ -26,6 +26,8 @@ function addEntry(){
   targetInputContainer.insertAdjacentHTML("beforeend", HTMLString)
 }
 
-function getCaloriesFromInputs (list){}
+function getCaloriesFromInputs (list){
+  let calories = 0
+}
 
 addEntryButton.addEventListener('click', addEntry)

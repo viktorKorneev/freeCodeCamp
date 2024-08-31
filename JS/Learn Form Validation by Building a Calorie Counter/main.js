@@ -13,38 +13,42 @@ function cleanInputString(str) {
 
 function isInvalidInput(str) {
   let regex = /\d+e\d+/i;
-  return str.match(regex)
+  return str.match(regex);
 }
 
-function addEntry(){
-  const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
-  const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1
+function addEntry() {
+  const targetInputContainer = document.querySelector(
+    `#${entryDropdown.value} .input-container`
+  );
+  const entryNumber =
+    targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
   const HTMLString = `<label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
   <input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name"></input>
   <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
-  <input type="number" min="0" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories"></input>`
-  targetInputContainer.insertAdjacentHTML("beforeend", HTMLString)
+  <input type="number" min="0" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories"></input>`;
+  targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
-function calculateCalories (e){
-
+function calculateCalories(e) {
+  e.preventDefault();
+  isError = false;
 }
 
-function getCaloriesFromInputs (list){
-  let calories = 0
- 
-  for(const item of list){
+function getCaloriesFromInputs(list) {
+  let calories = 0;
+
+  for (const item of list) {
     const currVal = cleanInputString(item.value);
-    const invalidInputMatch = isInvalidInput(currVal)
-   
-    if(invalidInputMatch){
-      alert(`Invalid Input: ${invalidInputMatch[0]}`)
-      isError = true
-      return null
+    const invalidInputMatch = isInvalidInput(currVal);
+
+    if (invalidInputMatch) {
+      alert(`Invalid Input: ${invalidInputMatch[0]}`);
+      isError = true;
+      return null;
     }
-    calories += Number(currVal)
+    calories += Number(currVal);
   }
-  return calories
+  return calories;
 }
 
-addEntryButton.addEventListener('click', addEntry) 
+addEntryButton.addEventListener("click", addEntry);

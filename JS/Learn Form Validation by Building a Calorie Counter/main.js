@@ -97,6 +97,7 @@ function clearForm() {
   }
   budgetNumberInput.value = ""
   output.innerText = ""
+  output.classList.add("hide")
 }
 
 addEntryButton.addEventListener("click", addEntry);

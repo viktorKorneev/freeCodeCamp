@@ -95,6 +95,7 @@ function clearForm() {
   for(let container of inputContainers){
     container.innerHTML = ""
   }
+  budgetNumberInput.value = ""
 }
 
 addEntryButton.addEventListener("click", addEntry);

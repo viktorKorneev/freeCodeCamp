@@ -44,13 +44,40 @@ console.log("Player Score: ", playerScore, "Computer Score: ", computerScore);
 const playerScoreSpanElement = document.getElementById("player-score");
 const computerScoreSpanElement = document.getElementById("computer-score");
 const roundResultsMsg = document.getElementById("results-msg");
+const winnerMsgElement = document.getElementById("winner-msg");
+const optionsContainer = document.querySelector(".options-container");
+const resetGameBtn = document.getElementById("reset-game-btn");
 
 function showResults(userOption) {
-    roundResultsMsg.innerText = getRoundResults(userOption)
-    playerScoreSpanElement.innerText = playerScore
-    computerScoreSpanElement.innerText = computerScore
-    
+  roundResultsMsg.innerText = getRoundResults(userOption);
+  playerScoreSpanElement.innerText = playerScore;
+  computerScoreSpanElement.innerText = computerScore;
+  if (playerScore === 3) {
+    winnerMsgElement.innerText = "Player has won the game!";
+    resetGameBtn.style.display = "block";
+  optionsContainer.style.display = "none";
+  } else if (computerScore === 3) {
+    winnerMsgElement.innerText = "Computer has won the game!";
+    resetGameBtn.style.display = "block";
+  optionsContainer.style.display = "none";
+  }
   
-};
+}
+
+const rockBtn = document.getElementById("rock-btn");
+const paperBtn = document.getElementById("paper-btn");
+const scissorsBtn = document.getElementById("scissors-btn");
+
+rockBtn.addEventListener("click", function () {
+  showResults("Rock");
+});
+
+paperBtn.addEventListener("click", function () {
+  showResults("Paper");
+});
+
+scissorsBtn.addEventListener("click", function () {
+  showResults("Scissors");
+});
 
 showResults("Rock");

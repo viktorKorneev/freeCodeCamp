@@ -23,7 +23,7 @@ function hasPlayerWonTheRound(player, computer) {
 
 console.log(hasPlayerWonTheRound("Rock", "Scissors"));
 console.log(hasPlayerWonTheRound("Scissors", "Rock"));
-
+// -----------------------------------------------------------------------
 function getRoundResults(userOption) {
   const computerResult = getRandomComputerResult();
   if (hasPlayerWonTheRound(userOption, computerResult)) {
@@ -39,3 +39,18 @@ function getRoundResults(userOption) {
 
 console.log(getRoundResults("Paper"));
 console.log("Player Score: ", playerScore, "Computer Score: ", computerScore);
+// ------------------------------------------------------------------------------------
+
+const playerScoreSpanElement = document.getElementById("player-score");
+const computerScoreSpanElement = document.getElementById("computer-score");
+const roundResultsMsg = document.getElementById("results-msg");
+
+function showResults(userOption) {
+    roundResultsMsg.innerText = getRoundResults(userOption)
+    playerScoreSpanElement.innerText = playerScore
+    computerScoreSpanElement.innerText = computerScore
+    
+  
+};
+
+showResults("Rock");

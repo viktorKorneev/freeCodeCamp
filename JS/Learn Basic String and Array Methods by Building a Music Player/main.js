@@ -118,7 +118,11 @@ const renderSongs = (array) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
-playButton.addEventListener("click", () => {});
+playButton.addEventListener("click", () => {
+  if (!userData?.currentSong) {
+    playSong(userData?.songs[0].id)
+  }
+});
 
 const sortSongs = () => {
   userData?.songs.sort((a, b) => {

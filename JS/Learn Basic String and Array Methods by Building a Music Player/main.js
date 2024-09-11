@@ -87,6 +87,8 @@ let userData = {
   songCurrentTime: 0,
 };
 
+const playSong = (id) => {};
+
 const renderSongs = (array) => {
   const songsHTML = array
     .map((song) => {
@@ -103,8 +105,6 @@ const renderSongs = (array) => {
 
   playlistSongs.innerHTML = songsHTML;
 };
-
-
 
 const sortSongs = () => {
   userData?.songs.sort((a, b) => {

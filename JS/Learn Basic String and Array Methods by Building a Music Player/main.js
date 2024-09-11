@@ -101,6 +101,8 @@ const playSong = (id) => {
   audio.play();
 };
 
+const pauseSong = () => {};
+
 const renderSongs = (array) => {
   const songsHTML = array
     .map((song) => {
@@ -120,9 +122,9 @@ const renderSongs = (array) => {
 
 playButton.addEventListener("click", () => {
   if (!userData?.currentSong) {
-    playSong(userData?.songs[0].id)
+    playSong(userData?.songs[0].id);
   } else {
-    playSong(userData?.currentSong.id)
+    playSong(userData?.currentSong.id);
   }
 });
 

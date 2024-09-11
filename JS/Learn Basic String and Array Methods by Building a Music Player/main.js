@@ -93,6 +93,8 @@ const playSong = (id) => {
   audio.title = song.title;
   if (!userData?.currentSong || userData?.currentSong.id !== song.id) {
     audio.currentTime = 0;
+  } else {
+    audio.currentTime = userData?.songCurrentTime;
   }
 };
 

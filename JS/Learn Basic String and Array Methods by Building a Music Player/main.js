@@ -168,7 +168,9 @@ const setPlayerDisplay = () => {
   songArtist.textContent = currentArtist ? currentArtist : "";
   resetButton.appendChild(resetText);
   playlistSongs.appendChild(resetButton);
-  resetButton.addEventListener("click", () => {});
+  resetButton.addEventListener("click", () => {
+    userData.songs = [...allSongs];
+  });
 };
 
 const highlightCurrentSong = () => {

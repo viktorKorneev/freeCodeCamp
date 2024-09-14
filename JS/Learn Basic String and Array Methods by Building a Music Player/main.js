@@ -132,6 +132,8 @@ const setPlayerDisplay = () => {
   const playingSong = document.getElementById("player-song-title");
   const currentTitle = userData?.currentSong?.title;
   const currentArtist = userData?.currentSong?.artist;
+  playingSong.textContent = currentTitle ? currentTitle : "";
+  songArtist.textContent = currentArtist ? currentArtist : "";
 };
 
 const highlightCurrentSong = () => {

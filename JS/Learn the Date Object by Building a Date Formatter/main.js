@@ -1,5 +1,5 @@
-const currentDateParagraph = document.getElementById('current-date');
-const dateOptionsSelectElement = document.getElementById('date-options');
+const currentDateParagraph = document.getElementById("current-date");
+const dateOptionsSelectElement = document.getElementById("date-options");
 
 const date = new Date();
 const day = date.getDate();
@@ -11,3 +11,4 @@ const minutes = date.getMinutes();
 
 const formattedDate = `${day}-${month}-${year}`;
 currentDateParagraph.textContent = formattedDate;
+dateOptionsSelectElement.addEventListener("change", () => {});

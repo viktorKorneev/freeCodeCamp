@@ -7,4 +7,8 @@ const playersDropdownList = document.getElementById("players");
 
 const myFavoriteFootballTeam = {
     team: "Argentina",
+    sport: "Football",
+    year: 1986,
+    isWorldCupWinner: true,
+    headCoach: {},
 };

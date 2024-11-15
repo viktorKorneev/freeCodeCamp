@@ -14,9 +14,20 @@ const myFavoriteFootballTeam = {
     coachName: "Carlos Bilardo",
     matches: 7,
   },
-  players: [{name: "Sergio Almirón",
-    position: "forward",
-    number: 1,
-    isCaptain: false,
-    nickname: null}],
+  players: [
+    {
+      name: "Sergio Almirón",
+      position: "forward",
+      number: 1,
+      isCaptain: false,
+      nickname: null,
+    },
+    {
+      name: "Sergio Batista",
+      position: "midfielder",
+      number: 2,
+      isCaptain: false,
+      nickname: null,
+    },
+  ],
 };

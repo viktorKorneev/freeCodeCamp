@@ -191,5 +191,5 @@ const setPlayerCards = (arr = players) => {
                     <p>Nickname: ${nickname !== null ? nickname : "N/A"}</p>
                 </div>`;
     }
-  );
+  ).join('');
 };

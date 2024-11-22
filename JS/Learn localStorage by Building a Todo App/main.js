@@ -13,6 +13,10 @@ const descriptionInput = document.getElementById("description-input");
 const taskData = JSON.parse(localStorage.getItem("data")) || [];
 let currentTask = {};
 
+const removeSpecialChars = (val) => {
+  return val.trim().replace(/[^A-Za-z0-9\-\s]/g, '')
+}
+
 const addOrUpdateTask = () => {
   if(!titleInput.value.trim()){
     alert("Please provide a title");

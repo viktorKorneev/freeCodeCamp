@@ -118,7 +118,7 @@ const myTaskArr = [
 localStorage.setItem("data", JSON.stringify(myTaskArr));
 console.log(localStorage);
 
-localStorage.removeItem("data");
+localStorage.clear();
 
 const getTaskArr = localStorage.getItem("data");
 console.log(getTaskArr);

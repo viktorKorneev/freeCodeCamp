@@ -4,11 +4,13 @@ const result = document.getElementById("result");
 
 const decimalToBinary = (input) => {
   if (input === 0 || input === 1) {
-   return String(input)
+    return String(input);
   } else {
     return decimalToBinary(Math.floor(input / 2)) + (input % 2);
   }
 };
+
+const showAnimation = () => {};
 
 const checkUserInput = () => {
   if (

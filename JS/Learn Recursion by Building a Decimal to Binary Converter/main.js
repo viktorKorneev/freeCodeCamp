@@ -1,13 +1,13 @@
-const countdown = (number) => {
+const countDownAndUp = (number) => {
   console.log(number);
   if (number === 0) {
     return;
   } else {
-    countdown(number - 1);
+    countDownAndUp(number - 1);
   }
 };
 
-countdown(3);
+countDownAndUp(3);
 
 const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");

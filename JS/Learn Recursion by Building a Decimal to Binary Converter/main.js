@@ -1,6 +1,8 @@
 const countdown = (number) => {
   console.log(number);
-  
+  if (number === 0) {
+    return;
+  }
 };
 
 const numberInput = document.getElementById("number-input");

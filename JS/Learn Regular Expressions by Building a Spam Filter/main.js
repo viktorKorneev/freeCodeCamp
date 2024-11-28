@@ -3,7 +3,7 @@ const result = document.getElementById("result");
 const checkMessageButton = document.getElementById("check-message-btn");
 const helpRegex = /please help/i;
 
-const isSpam = (msg) => false;
+const isSpam = (msg) => msg.match(helpRegex);
 
 checkMessageButton.addEventListener("click", () => {
   if (messageInput.value === "") {

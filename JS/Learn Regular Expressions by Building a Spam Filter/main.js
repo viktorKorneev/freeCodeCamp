@@ -8,7 +8,7 @@ const freeRegex = /free money/i;
 
 const isSpam = (msg) => denyList.some((regex) => regex.test(msg));
 
-const denyList = [helpRegex, dollarRegex];
+const denyList = [helpRegex, dollarRegex, freeRegex];
 
 checkMessageButton.addEventListener("click", () => {
   if (messageInput.value === "") {

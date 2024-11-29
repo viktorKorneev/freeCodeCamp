@@ -2,7 +2,7 @@ const messageInput = document.getElementById("message-input");
 const result = document.getElementById("result");
 const checkMessageButton = document.getElementById("check-message-btn");
 const helpRegex = /please help|assist me/i;
-const dollarRegex = /[0-9]+ dollars/i;
+const dollarRegex = /[0-9]+ hundred|thousand|million|billion dollars/i;
 
 const isSpam = (msg) => denyList.some((regex) => regex.test(msg));
 

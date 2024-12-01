@@ -8,8 +8,11 @@ const sortInputArray = (event) => {
 };
 
 const updateUI = (array = []) => {
-  array.forEach((num, i) => {});
-  const outputValueNode = document.getElementById(`output-value-${i}`);
-  outputValueNode.innerText = num;
+  array.forEach((num, i) => {
+    const outputValueNode = document.getElementById(`output-value-${i}`);
+    outputValueNode.innerText = num;
+  });
 };
+
+const bubbleSort = (array) => {};
 sortButton.addEventListener("click", sortInputArray);

@@ -4,7 +4,7 @@ const sortInputArray = (event) => {
   const inputValues = [
     ...document.getElementsByClassName("values-dropdown"),
   ].map((dropdown) => Number(dropdown.value));
-  const sortedValues = bubbleSort(inputValues);
+  const sortedValues = selectionSort(inputValues);
   updateUI(sortedValues);
 };
 

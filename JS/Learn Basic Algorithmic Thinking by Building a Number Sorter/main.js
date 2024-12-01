@@ -26,5 +26,6 @@ const bubbleSort = (array) => {
       }
     }
   }
+  return array;
 };
 sortButton.addEventListener("click", sortInputArray);

@@ -6,5 +6,7 @@ const sortInputArray = (event) => {
   ].map((dropdown) => Number(dropdown.value));
 };
 
-const updateUI = (array = []) => {};
+const updateUI = (array = []) => {
+  array.forEach((num, i) => {});
+};
 sortButton.addEventListener("click", sortInputArray);

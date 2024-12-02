@@ -4,4 +4,6 @@ const calculate = () => {
   const numbers = array.map((el) => Number(el)).filter((el) => !isNaN(el));
 };
 
-const getMean = (array) => {};
+const getMean = (array) => {
+  const sum = array.reduce();
+};

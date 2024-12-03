@@ -12,8 +12,14 @@ const getMedian = (array) => {
 
 const getMode = (array) => {
   const counts = {};
-  array.forEach((el) => {});
-  return array;
+  array.forEach((el) => {
+    if (counts[el]) {
+      counts[el] += 1;
+    } else {
+      counts[el] = 1;
+    }
+  });
+  return counts;
 };
 
 const calculate = () => {
@@ -23,7 +29,7 @@ const calculate = () => {
   const mean = getMean(numbers);
   const median = getMedian(numbers);
   console.log(getMode(numbers));
-  
+
   document.querySelector("#median").textContent = median;
   document.querySelector("#mean").textContent = mean;
 };

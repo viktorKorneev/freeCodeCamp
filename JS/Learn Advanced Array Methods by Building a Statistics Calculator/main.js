@@ -10,6 +10,8 @@ const getMedian = (array) => {
   return median;
 };
 
+const getMode = (array) => {};
+
 const calculate = () => {
   const value = document.querySelector("#numbers").value;
   const array = value.split(/,\s*/g);

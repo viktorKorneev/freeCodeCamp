@@ -19,6 +19,7 @@ const getMode = (array) => {
       counts[el] = 1;
     }
   });
+  return array;
 };
 
 const calculate = () => {

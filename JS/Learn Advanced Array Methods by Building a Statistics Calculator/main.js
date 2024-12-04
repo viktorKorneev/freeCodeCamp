@@ -41,7 +41,7 @@ const getVariance = (array) => {
 
 const getStandardDeviation = (array) => {
   const variance = getVariance(array);
-  const standardDeviation = Math.pow(variance, 0.5);
+  const standardDeviation = Math.sqrt(variance);
 };
 
 const calculate = () => {

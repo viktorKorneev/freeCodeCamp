@@ -3,7 +3,7 @@ const range = (start, end) =>
     .fill(start)
     .map((element, index) => element + index);
 
-const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0));
+const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
 
 window.onload = () => {
   const container = document.getElementById("container");

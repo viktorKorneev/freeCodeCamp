@@ -1,3 +1,5 @@
+const sum = (nums) => nums.reduce((acc, el) => acc + el);
+
 const range = (start, end) =>
   Array(end - start + 1)
     .fill(start)

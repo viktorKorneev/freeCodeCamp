@@ -3,6 +3,9 @@ const range = (start, end) =>
     .fill(start)
     .map((element, index) => element + index);
 
+const charRange = (start, end) => range(start, end);
+
+
 window.onload = () => {
   const container = document.getElementById("container");
   const createLabel = (name) => {
